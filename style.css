@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(130deg, #ff7c48, #570057);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+body > p {
+    margin: 30px 0;
+    font-size: 17pt;
+    color: white;
+    font-weight: bolder;
+}
+
+input {
+    width: 450px;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 15pt;
+    outline: none;
+}
+
+#input > button {
+    width: 54px;
+    height: 54px;
+    transform: translate(-6px, 4px);
+}
+
+#tarefas {
+    display: grid;
+    gap: 15px;
+}
+
+.tarefa {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 530px;
+    padding: 10px;
+    box-shadow: 0 5px 0 #910291;
+}
+
+.tarefa > p {
+    color: #910291;
+    font-weight: bolder;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.tarefa button {
+    border: none;
+    outline: none;
+    transform: scale(1.75) translateX(1px);
+    background-color: transparent;
+}
+
+.completar:hover {
+    background-color: #03cc03;
+    color: white;
+}
+
+.deletar:hover {
+    background-color: #cc0303;
+    color: white;
+}
